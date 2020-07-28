@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -12,26 +12,29 @@
 </head>
 
 <body>
- <div class="login">
-	<h1>Predict Insurance Bill</h1>
+    <div class="login">
+        <div>
+            <img class="marginauto" src="logo.jpg" alt="centered image" />
+        </div>
+        <h1>Predict Insurance Bill</h1>
 
-     <!-- Form to enter new data for predictions  -->
-    <form action="{{ url_for('predict')}}"method="POST">
-      <input type="text" name="age" placeholder="Age" required="required" /><br>
-    	<input type="text" name="sex" placeholder="Sex" required="required" /><br>
-        <input type="text" name="bmi" placeholder="BMI" required="required" /><br>
-        <input type="text" name="children" placeholder="Children" required="required" /><br>
-        <input type="text" name="smoker" placeholder="Smoker" required="required" /><br>
-        <input type="text" name="region" placeholder="Region" required="required" /><br>
+        <!-- Form to enter new data for predictions  -->
+        <form action="{{ url_for('predict')}}" method="POST">
+            <input type="text" name="age" placeholder="Age" required="required" /><br>
+            <input type="text" name="sex" placeholder="Sex" required="required" /><br>
+            <input type="text" name="bmi" placeholder="BMI" required="required" /><br>
+            <input type="text" name="children" placeholder="Children" required="required" /><br>
+            <input type="text" name="smoker" placeholder="Smoker" required="required" /><br>
+            <input type="text" name="region" placeholder="Region" required="required" /><br>
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
 
-   <br>
-   <br>
-  
-   
- </div>
+        <br>
+        <br>
+
+
+    </div>
  {{pred}}
 
 </body>
